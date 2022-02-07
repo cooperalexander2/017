@@ -1,0 +1,33 @@
+Link to screenshots: https://imgur.com/a/zZawau0
+This week we learned about the OSI and TCP/IP models and how they function, as well as some networking tools including ping, traceroute, dig, and whois.\
+The OSI model has seven layers:
+  -Layer 7 / Application : Data starts from an application, then is sent into
+  -Layer 6 / Presentation: The data is translated to a standardied format and handles compression / encryption / etc., then sends it to
+  -Layer 5 / Session     : This layer establishes a connection with the other computer and maintains it throughout the transmission, then the data is passed to
+  -Layer 4 / Transport   : This layer chooses whether to send the data as UDP or TCP and then converts the data to datagrams or segments respecitvely.
+    -TCP / Transmission Control Protocol: establishes connection prior to sending data, ensures that all data is recieved, is favored when accuracy is most important
+    -UDP / User Datagram Protocol       : transmits data whether the connection remains secure or not, is favored when speed is most important
+  -Layer 3 / Network     : This layer takes the designated IP address (Internet Protocol / logical addressing) and establishes the best route to transmit the data.
+  -Layer 2 / Data Link   : This layer adds in the MAC address (Media Access Control / physical addressing) to the recieving endpoint and presents the data
+                           in a format suitable for transmission. It also makes sure the data wasn't corrupted during transmission.
+  -Layer 1 / Physical    : This layer focuses on the computer hardware, it takes the binary data into electrical signals and transmits them across the network and vice versa.
+The next topic is encapsulation. Each layer, starting with 7 and counting down until 1, adds a header to the data that is comprised of information specific to the layer being
+used. Layer 2 adds an additional trailer as well and Layer 1 does not add a header or trailer. In layers 5 6 and 7, the data is simply known as data. In layer 4 the data 
+becomes known as segments or datagrams depending on whether TCP or UDP is used. In layer 3 data is known as packets, in layer 2 frames, and in layer 1 bits. When the 
+transmission is recieved the layering process is reversed and each header / tail is removed. This process also increases the security of the transmission as the data cannot
+be tampered with without removing the tail. 
+The next topic covers the TCP/IP model, which serves as the basis for real-world networking. The TCP/IP model was created as a standardized model in 1982 and has four 
+(rarely five) layers.
+  Application       : covers the Application, Presentation, and Session layers from the OSI model.
+  Transport         : covers the Transport layer from the OSI model.
+  Internet          : covers the Network layer from the OSI model.
+  Network Interface : covers the Data Link / Physical layers from the OSI model.
+  (Some sources seperate the Data Link / Physical layers into their own respective layers)
+One of the protocols covered under this model is the TCP protocol. This protocol starts by sending data containing a SYN (synchronise) bit to the destination. The destination
+will send back the SYN bit as well as an ACK (acknowlegement) bit to acknowledge the request. Your computer will send the ACK bit back, and both computers have confirmed a 
+connection has been made. 
+The next topics contain an introduction to some simple networking tools. 
+  Ping       : This command tests whether connection to a specific source is possible. It can also determine the IP address of the server hosting a website. 
+  Traceroute : This command maps the path to the destination as your request will likely make its way through multiple servers. 
+  WHOIS      : This command allows you to see who a domain belongs to via data from Domain Registrars. 
+  Dig        : This command lets you manually query recursive DNS (Domain Name System) servers for information about domains, including the TTL (Time To Live) of the DNS record.
