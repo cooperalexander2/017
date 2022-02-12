@@ -1,0 +1,29 @@
+This week's TryHackMe room was an introduction to LAN. LAN stands for Local Area Network, which is most likely what you're connected to when connected to a network belonging
+to a home or organization or business. 
+In networking, there are a few different systems, or topologies, of how everything is patched together on the network. The first and
+arguably most effective topology we have learned about is the Star Topology. In this topology all devices are individually connected to a switch, which then is connected to a
+router and then to the ISP's network. This network is less likely to fail than the others as if a cable fails from one device, the rest of the network is not affected. Due to
+how it is set up it is also easy to scale up. However, due to all the cable involved, it is also the most expensive and requires the most maintenence to maintain. The next
+topology is the Ring Topology. In this type of network each device is connected to two others which ends up connecting all devices into a "ring". It is effective in that it 
+is easy to troubleshoot if something goes wrong because data only travels in one direction, but it also is an ineffective way of sending data as the data may have to pass through
+multiple devices to get to the target device. There is also less cable involved and it doesn't have to depend on dedicated hardware. The next topology is the Bus Topology. In
+a bus topology all devices are connected to a single backbone cable. If a lot of data is being sent / recieved the cable can quickly become bottlenecked and slow. It is also
+difficult to troubleshoot as it is diffucult to find out which device is experiencing issues with all data traveling down the same route. The only benefits to this system is
+that it is cheap on cabling and doesn't require dedicated networking hardware. The next topic is a hardware device called a switch. Switches are dedicated devices within a 
+network that are designed to aggregate multiple other devices such as computers, printers, or any other networking-capable device using ethernet. The various devices used on
+the network plug into one of the switch's "ports" and switches are found in businesses, schools, and similar sized networks. Switches will almost always be connected to a 
+router. A router is a device that connects networks and routes data between them. 
+The next topic is subnetting. Subnetting is the term given to splitting up a network into smaller, miniature networks within itself. Subnetting is achieved by splitting up 
+the number of hosts that can fit within the networt, represented by a number known as a subnet mask. A subnet mask is a number of four bytes ranging from 0-255. Subnets use
+IP adresses to identify the network address, the host address, and the default gateway. The network address identifies the start of the network and is used to identify the
+network's existence. The host address identifies a device on the subnet, and the default gateway address is assigned to a device on the network and is capable of sending data
+to another network. In a home, you will likely only be on one subnet, but in larger settings such as a business, they might have multiple. A local business might have two subnets,
+one for their cash registers, cameras, office computers, scanners, etc. and another subnet for customers to use as a hotspot. 
+The next topic is the ARP Protocol, or Address Resolution Protocol. ARP is the technology that is responsible for allowing devices to identify themselves on a network. Simply, 
+the ARP protocol allows a device to associate its MAC address with an IP address on the network. Each device on a network will keep a log of the MAC addresses associated with 
+other devices. ARP has two identifiers: ARP request and ARP reply. When an ARP request is sent, a message is broadcasted to every other device found on a network by the device, 
+asking whether or not the device's MAC address matches the requested IP address. If the device does have the requested IP address, an ARP reply is returned to the initial device 
+to acknowledge this. The initial device will now remember this and store it within its cache.
+The next topic is DHCP Protocol, or Dynamic Host Configuration Protocol. If a device connects to a network and has not been manually assigned an IP address, it will send out
+a request (DHCP Discover) to find any DHCP servers on the network. The DHCP server replies with an IP address the device can use (DHCP Offer). The device sends a reply which
+confirms it wants to use that IP address (DHCP Request) and the DHCP server acknowledges that the device can start using that IP address (DHCP Ack).
