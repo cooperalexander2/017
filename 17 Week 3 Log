@@ -1,0 +1,31 @@
+This week's lab went over some common attacks seen in cybersecurity.
+The first type of attack we went over was Social Engineering. It's used to describe any cyberattack targetting a person rather than a computer. This type of attack can
+use a multitude of methods, from impersonating someone who needs your data over the phone, to checking your social media presense for potential passwords, to dropping
+loaded USB drives in public places where they could be picked up and investigated by someone with little cybersecurity knowledge. Some ways to watch out for social 
+engineering include setting up multiple forms of authentication and using harder passwords or answers to security questions, not connecting a device with unknown information
+on it to any of your devices, and making sure people who call you from companies are legitimate.
+Another type of social engineering is Phishing and its offshoots Vishing and Smishing. Phishing specifically describes a type of social engineering attack where the attacker
+attempts to trick the victim into opening a malicious webpage, usually to steal information such as a login password, by sending the victim an email, text message, or other
+types of direct messages. There are three types of phishing which get more crafty the further they go; general phishing which is usually untargeted, spear phishing which 
+targets specific groups such as employees of a company, and whaling which usually only targets one high-level individual within a company. Usually when someone is phished
+they are taken to a fake website's login page which UI generally matches the real website's login page. Once you have entered your information it most likely will redirect to
+the real website, and the attacker will now have your login information. The url the fake website uses will most likely try to make itself look like the real website. A fake
+url for amazon.com could be amazoncustomersupport.com, or a fake url could use typos, so instead of amazon.com it could be amazom.com. To protect yourself from phishing attacks,
+delete untrusted emails without opening them, or send them to your company's IT department. Never open attatchments from untrusted emails, do not click on imbedded links, 
+make sure your software is up to date, and avoid making any of your personal information public. 
+The next type of attack is Malware, short for malicious software, and the first topic is Ransomware. Ransomware will lock you out of your computer and encrypt your files
+and make you pay (usually in cryptocurreny) a fine to the attacker to unlock your files, which may or may not work. Malware can unknowingly be downloaded in many ways, through
+.exe, .ps1, .bat, .hta, or .js files to name a few. To protect yourself from malware, keep all applications and systems up to date, never click on suspicious links, be on the
+lookout for anyone or anything that wants you to run a file, never plug unknown media devices into a computer, and always back up important data. 
+The next topic is Passwords. When creating a password length is a bit more important than randomization, althought ideally your would use unique passwords with a long length
+that are completely randomized. You can keep track of all these unmemorizable passwords by using a password manager. Sometimes a databreach can happen from a website to which
+you have login credentials. This is an important reason why you should not use the same password in more than one place. 
+The next topic is MFA and password managers. MFA or multi-factor authentication is an extra layer of security available for many websites and servcies. On top of your password
+they will have you enter a code they send to your cell phone for that specific login instance. Another type of MFA is TOTP or time-based one time password. These passwords
+are generated for one time use through a trusted application to which you have connected MFA. Password Managers are important tools to keep track of secure passwords. 
+The next topic is public network safety. You should make sure to only enter information on https urls rather than http urls as it includes Transport Layer Security and keeps
+your information secure on public networks. On top of this it is useful to use a VPN or virtual private network as they encrypt all traffic leaving and entering your machine.
+It is important to create backups of all your data, and the best practice to do this is with the 3:2:1 method. Have 3 copies of your data, keep a copy in at least 2 seperate
+storage mediums, and have at least 1 of those storage mediums be cloud-based.
+It is also important to make sure all your software and applications are up to date, as they are constantly being updated with security patches and any software lacking the
+latest security patches and big fixes are more likely to be susceptible to an attack. 
