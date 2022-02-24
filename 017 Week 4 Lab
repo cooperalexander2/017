@@ -1,0 +1,18 @@
+This week's lab focused on WEBOSINT, or researching open source intelligence on a website. 
+The first topic could possibly be most people's roadblock that stops their search completely. It is what you can do if the website no longer exists or no longer exists in its 
+previous form. One of the first methods you can try is simply searching for the website without being directed to its URL. You might be able to find information about the 
+now nonexistant website. Another method to research would be to do a 'whois' search. The website to perform a whois search that this lab recommends you use is lookup.icann.org,
+but interestingly enough some of the answers to this portion of the lab I could not find on icann.org, and it took me another whois focused search website to find the information
+the lab was looking for. The registrant country, the nameservers, and the registration company phone numbers for whatever odd reason were not the same depending on which website
+I used. Either way, I got to the correct information. Another method introduced is using the archive.org Wayback Machine. It is a website that stores web page snapshots to archive
+them. You can't always find the exact page you're looking for but it certainly can help when the page has been backed up. The next method is using ViewDNS.info, a website which
+has several potentially helpful tools such as viewing present and previous IP addresses associated with the website, see if the IP address is shared between other websites, and 
+how many times the  IP address has changed, just to name a few. The next portion of the lab had us perform research on the website heat.net without any walkthrough. I answered
+questions using archive.org, ViewDNS.info, a whois search, and looking up the website to find information. 
+The next step had us take a closer look at what is now heat.net. I peered into the source code of the website and found there were a few internal links and one external link,
+and there was also no obvious affiliate code which means the external link was not paid promotion. The next step was to find out why the external link to purchase.org was there.
+With no obvious connection we just had to use all of the tools we have learned thus far to find a connection. The first thing I did was try to find a name connecting both of the
+websites through their webpages but I did not find anything. That is when I looked up the IP history on viewdns.info, and found that Liquid Web  L.L.C. had owned both domains. 
+No more work to be done in this lab, just debreifing. The creator of heat.net and purchase.org probably operate as a private blog network or PBN. PBNs exist to try to convince
+web search algorithms that certain websites should place higher up on search results. Heat.net is an outdated looking website without a clear motive besides linking to purchase.org,
+which according to TryHackMe was a dropshipping ecommerce website (also according to archive.org https://web.archive.org/web/20190326180127/https://purchase.org/). 
