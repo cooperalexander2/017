@@ -1,0 +1,11 @@
+I admit this week's lab was a challenge to get done! It was THM's Mobile Malware Analysis room. The focus of this week's room was that even though most of cybersecurity is
+focused on larger systems. our phones can be at just as great or even greater of a risk for threats. 
+The first module was a brief overview of the first widespread mobile device worm, Cabir, which started in 2004 and infected Nokia's Symbian devices and spread using Bluetooth.
+It was developed and deployed by researchers, who did not believe it could easily be done, as a proof of concept.
+This next module had us using a virtual machine through THM to upload a file to MOBSF for analysis. The file was an Android APK and was malware.
+The next module is where I had trouble. I believed we were supposed to virustotal.com inside the virtual machine. It did not work within the virtual machine and I spent roughly an
+hour waiting and trying again, checking the discussion posts to see if anyone else had the issue. Turns out we were just supposed to open it in our own browser and type in the
+hash! Oh well. I ended up getting it done and finding out all the information it had asked me for. 
+The next module took us back to MOBSF for further analysis, and found that this malware is used to create a connection with the victim that is called a reverse shell.
+The next module took off the training wheels and basically had us do it all over again without a walkthrough with another unknown file. It turned out to be an Android APK of
+Pegasus, spyware developed and used by the Israeli government. We then found out more information at https://attack.mitre.org and then back to MOBSF to finish it off. 
