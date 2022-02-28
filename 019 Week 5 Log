@@ -1,0 +1,24 @@
+This week's TryHackMe lab focused on Active Reconnaissance. Passive reconnaissance is a way to gather information on the target without making a direct connection or engaging with
+them. The information is public or you are watching from afar. Active reconnaissance requires engaging / making contact with the target, such as social engineering or trying to
+connect to target systems, and its important not to do this before signing the proper legal authorization forms. 
+Connecting to the target can leave a trail, including your IP address, and the time and duration in which you connected to the system. In this room we discuss a number of tools 
+including web browsing, traceroute, ping, telnet, and netcat. 
+The first main module is about using your web browser. The browser uses TCP 80 when accessed with HTTP, and TCP 443 when accessed with HTTPS. It is possiblt to use custom ports
+to access a service. While browsing a web page, you can open Developer Tools on Firefox or Chrome. Developer Tools let you inspect  many things that your browser has received and 
+exchanged with the remote server. You can view and even modify the javaScript files, inspect the cookies set on your system and discover the folder structure of the site 
+content. There are also several add ons for browsers that can help in pen testing. Some examples include FoxyProxy, which lets you change the proxy server you are using to
+access the target website, User-Agent Switcher and Manager, which gives you the ability to pretend to be accessing the web page from many different Operating Systems or web
+browsers, and Wappalyzer, which provides insights about the technologies used on the visited websites.\
+The next module is Ping, which is a tool we've gone over a little before. The primary purpose of ping is to test whether you can reach a system and the system can reach you back.
+We can also use it to see if the remote system is online. If you ping a system and the system acknowledges, it means the system is online. We would ping a system so that we can
+see if it is online before trying to engage more detailed scans to discover the running operating system and services. Ping falls under Internet Control Message Protocol or ICMP. 
+If a system responds, we can see that firewalls on the system are not blocking ICMP echo requests. 
+The next tool is traceroute. The traceroute command traces the route taken by the packets from your system to another host. We do this to find the IP addresses of the routers
+that a packet moves through as it goes from your system to a target. We can "trick" the routers into revealing their IP addresses by using a small TTL in the IP header field. 
+TTL indicates the maximum number of routers/hops that a packet can pass through before being dropped. Different runs might lead to different routes taken by the packets. Some 
+routers return a public IP address. You might examine a few of these routers based on the scope of the intended penetration testing.
+The next module is TelNet. Teletype Network protocol was developed in 1969 to communicate with a remote system via a command-line interface. Telnet sends all the data, including 
+usernames and passwords, in cleartext. The secure alternative is SSH. Knowing that telnet client relies on the TCP protocol, you can use Telnet to connect to any service and grab 
+its banner.
+The last module is Netcat. NC has different apps that make it a valuable tool for pentesting. It supports TCP and UDP, can function as a listening port, or act as a server that
+listens to a port of your choice. 
